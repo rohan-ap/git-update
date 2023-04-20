@@ -11,3 +11,4 @@ spec:
     kind: Service
     name: warproject
     weight: 100
+  path: /WebApp
