@@ -17,7 +17,7 @@ spec:
       containers:
         - image: quay.io/rohanp/warproject:dev
           imagePullPolicy: Always
-          name: sonarqube
+          name: warproject
           ports:
             - containerPort: 8080
               protocol: TCP
