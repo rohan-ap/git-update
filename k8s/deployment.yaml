@@ -15,7 +15,7 @@ spec:
         app: warproject1
     spec:
       containers:
-        - image: quay.io/rohanp/warproject:dev1
+        - image: quay.io/rohanp/warproject1:dev1
           imagePullPolicy: Always
           name: warproject1
           ports:
