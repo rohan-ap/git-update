@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: warproject1
+  name: warproject1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: warproject1
+  template:
+    metadata:
+      labels:
+        app: warproject1
+    spec:
+      containers:
+        - image: quay.io/rohanp/warproject1:dev1
+          imagePullPolicy: Always
+          name: warproject
+          ports:
+            - containerPort: 8080
+              protocol: TCP
