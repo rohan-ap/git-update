@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: warproject1
-  name: warproject1
+    app: warproject
+  name: warproject
 spec:
   type: ClusterIP
   ports:
@@ -12,4 +12,4 @@ spec:
       targetPort: 8080
       protocol: TCP
   selector:
-    app: warproject1
+    app: warproject
