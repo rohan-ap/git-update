@@ -2,13 +2,13 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    app: warproject1
-  name: warproject1
+    app: warproject
+  name: warproject
 spec:
   port:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: warproject1
+    name: warproject
     weight: 100
   path: /WebApp
