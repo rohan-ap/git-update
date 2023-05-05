@@ -4,9 +4,9 @@ resources:
 - deployment.yaml
 - route.yaml
 - service.yaml
-- new-deployment.yaml
-- new-route.yaml
-- new-service.yaml
+# - new-deployment.yaml
+# - new-route.yaml
+# - new-service.yaml
 images:
 - digest: sha256:054ffcf5fa770c112eae9ae4da6115877711c34ad4d10d9d6ea26bfc24d78102
   name: quay.io/rohanp/warproject
