@@ -3,21 +3,18 @@ kind: Deployment
 metadata:
   labels:
     app: warproject
-    version: dev1
   name: warproject
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: warproject
-      version: dev1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: warproject
-        version: dev1
     spec:
       containers:
         - image: quay.io/rohanp/warproject:dev1
