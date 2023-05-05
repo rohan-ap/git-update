@@ -5,9 +5,9 @@ metadata:
     app: warproject
   name: warproject
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
-    - name: "tcp-8080"
+    - name: 8080-tcp
       port: 8080
       targetPort: 8080
       protocol: TCP
