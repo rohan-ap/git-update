@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: warproject1
-    version: dev1
+#   labels:
+#     app: warproject1
+#     version: dev1
   name: warproject1
 spec:
   replicas: 1
