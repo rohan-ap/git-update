@@ -11,17 +11,15 @@ spec:
       app: warproject
   template:
     metadata:
-      annotations:
-        sidecar.istio.io/inject: "true"
       labels:
         app: warproject
     spec:
       containers:
         - image: quay.io/rohanp/warproject:dev1
           imagePullPolicy: Always
-          name: warproject
+          name: sonarqube
           ports:
             - containerPort: 8080
               protocol: TCP
-              name: tcp-8080
-
+            - containerPort: 9090
+              protocol: TCP
