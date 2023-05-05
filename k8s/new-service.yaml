@@ -3,7 +3,6 @@ kind: Service
 metadata:
   labels:
     app: warproject1
-    version: dev1
   name: warproject1
 spec:
   type: ClusterIP
@@ -14,4 +13,3 @@ spec:
       protocol: TCP
   selector:
     app: warproject1
-    version: dev1
