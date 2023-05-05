@@ -3,6 +3,7 @@ kind: Route
 metadata:
   labels:
     app: warproject1
+    version: dev1
   name: warproject1
 spec:
   port:
